@@ -34,8 +34,4 @@ operationsRoutes.get(
   }
 );
 
-operationsRoutes.get("/a", (request, response) => {
-  return response.send({ message: "OI" });
-});
-
 export { operationsRoutes };
