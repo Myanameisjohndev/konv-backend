@@ -12,6 +12,7 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 (0, server_conection_1.connectMongo)();
 app.use(routes_1.routes);
-app.listen(3334, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
     console.log("Server is running");
 });

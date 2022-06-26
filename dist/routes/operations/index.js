@@ -18,6 +18,3 @@ operationsRoutes.post("/withdraw/:cpf", operationCpfValidator_1.operationCpfVali
 operationsRoutes.get("/extract/:cpf", operationCpfValidator_1.operationCpfValidator, (request, response) => {
     return (0, extract_1.ExtractControler)(request, response);
 });
-operationsRoutes.get("/a", (request, response) => {
-    return response.send({ message: "OI" });
-});
